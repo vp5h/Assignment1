@@ -1,0 +1,26 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.card {
+  /* color: #ff3453; */
+  background-color: aliceblue;
+  display: flex;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 2px solid black;
+  flex-direction: column;
+}
+
+.cardimage {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cardText{
+
+}
