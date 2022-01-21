@@ -29,7 +29,7 @@ export default function App() {
           </option>
         ))}
       </select>
-      {currentComp === "Card" ? <Cards /> : null}
+      {currentComp === "Card" && <Cards />}
       {/* {currentComp === 'card' ? <Cards /> : null}
       {currentComp === 'card' ? <Cards /> : null}
       {currentComp === 'card' ? <Cards /> : null} */}
