@@ -1,0 +1,79 @@
+.card {
+  /* color: #ff3453; */
+  background-color: #ffffff;
+  display: flex;
+  height: auto;
+  width: 25rem;
+  border-radius: 1rem;
+  flex-direction: column;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
+    0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+
+.card_Image {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  z-index: 1;
+}
+
+.card_Text {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card_Text-head {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  letter-spacing: 0.0125em;
+}
+.card_Text-Subhead {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  letter-spacing: 0.0071428571em;
+  opacity: 70%;
+}
+.card_Text-ParaGraph {
+  margin-top: 0.5rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  text-decoration: inherit;
+  text-transform: inherit;
+  opacity: 70%;
+}
+
+.card_Top:hover {
+  background-color: #f7f7f7;
+}
+.card_Bottom {
+  display: flex;
+  flex-direction: "row";
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+.card_Bottom-Buttons {
+  color: #6200ee;
+  font-weight: bolder;
+  padding: 1rem;
+}
+.card_Bottom-Buttons:hover {
+  background-color: #f7f7f7;
+}
+
+.card_Icons:hover {
+  background-color: #f7f7f7;
+  opacity: 100%;
+}
+.card_Icons {
+  border-radius: 50%;
+  font-size: 1.25rem;
+  opacity: 60%;
+  padding: 1rem;
+}
+.card_Text-Bottom {
+  display: flex;
+  margin-top: 0.3rem;
+}

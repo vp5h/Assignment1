@@ -1,27 +1,38 @@
-import React from 'react';
-import { FaHeart } from 'react-icons/fa';
-import './style.css';
-import Cards from './Card';
+import React from "react";
+import "./style.css";
+import Cards from "../src/cards/Card";
 
 export default function App() {
   let compArr = [
-    'card',
-    'Chips',
-    'drawer',
-    'header',
-    'badge',
-    'snackbar',
-    'dialogs',
-    'tabs',
+    "Card",
+    "Chips",
+    "Drawer",
+    "Header",
+    "Badge",
+    "Snackbar",
+    "Dialogs",
+    "Tabs"
   ];
   const [currentComp, setCurrentComp] = React.useState(compArr[0]);
 
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-       <FaHeart />
-      <p>Start editing to see some magic happen :)</p>
+    <div className="App">
+      <select
+        className="select"
+        onChange={(e) => {
+          setCurrentComp(e.target.value);
+        }}
+      >
+        {compArr.map((comp) => (
+          <option key={comp} value={comp}>
+            {comp}
+          </option>
+        ))}
+      </select>
+      {currentComp === "Card" ? <Cards /> : null}
+      {/* {currentComp === 'card' ? <Cards /> : null}
       {currentComp === 'card' ? <Cards /> : null}
+      {currentComp === 'card' ? <Cards /> : null} */}
     </div>
   );
 }
