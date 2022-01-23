@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import Cards from "../src/cards/Card";
-
+import Chips from "./Chips/Chips";
 export default function App() {
   let compArr = [
     "Card",
@@ -30,6 +30,7 @@ export default function App() {
         ))}
       </select>
       {currentComp === "Card" && <Cards />}
+      {currentComp === "Chips" && <Chips />}
       {/* {currentComp === 'card' ? <Cards /> : null}
       {currentComp === 'card' ? <Cards /> : null}
       {currentComp === 'card' ? <Cards /> : null} */}
