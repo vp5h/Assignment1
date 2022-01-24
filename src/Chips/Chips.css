@@ -1,13 +1,17 @@
 .chip {
   width: auto;
-  height: 1rem;
-  background-color: fuchsia;
+  background-color: #e0e0e0;
   padding: 0.5rem;
   border-radius: 1rem;
   margin: 0.23rem;
 }
 
+.chip:hover {
+  background-color: #c6c6c6;
+}
+
 .Chip-Input {
+  margin-top: 1rem;
 }
 .Chip_Component {
   display: flex;
@@ -18,7 +22,20 @@
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
+  background-color: #f0f0f0;
 }
 .chipIcon {
   padding-left: 0.8rem;
+}
+.chips {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 20px;
+  width: auto;
+  max-width: 100%;
+}
+.Chip-Input {
+  border: none;
+  appearance: none;
 }
