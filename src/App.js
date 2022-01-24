@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import Cards from "../src/cards/Card";
 import Chips from "./Chips/Chips";
+import Drawer from "./Drawer/Drawer";
 export default function App() {
   let compArr = [
     "Card",
@@ -31,6 +32,7 @@ export default function App() {
       </select>
       {currentComp === "Card" && <Cards />}
       {currentComp === "Chips" && <Chips />}
+      {currentComp === "Drawer" && <Drawer />}
       {/* {currentComp === 'card' ? <Cards /> : null}
       {currentComp === 'card' ? <Cards /> : null}
       {currentComp === 'card' ? <Cards /> : null} */}
