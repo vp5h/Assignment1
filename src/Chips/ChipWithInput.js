@@ -22,7 +22,7 @@ export default function ChipsWithInput() {
   return (
     <>
       <div className="Chip_Component">
-        <label for="Chip-Input" className="chips">
+        <label htmlFor="Chip-Input" className="chips">
           <div className="allChips">
             {ChipArr.map((chip) => {
               return (

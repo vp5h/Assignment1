@@ -1,9 +1,8 @@
 .Drawer {
   display: flex;
   flex-direction: column;
-  /* outline: auto; */
-  height: 18rem;
-  width: 16rem;
+  height: auto;
+  width: 20rem;
   padding: 1rem;
   box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
     0 1px 3px 0 rgb(0 0 0 / 12%);
@@ -16,4 +15,27 @@
 .subtext {
   font-size: 1rem;
   opacity: 50%;
+}
+
+.nav {
+  margin: 0.2rem;
+}
+.Icon {
+  margin: 0.7rem;
+}
+
+.Icon svg {
+  font-size: 1.5rem;
+}
+.options {
+  display: flex;
+  border-radius: 0.2rem;
+}
+.option_text {
+  font-size: 1.1rem;
+  margin: 0.8rem;
+}
+.options:hover {
+  background-color: #f2f2f2;
+  /* color: #6200ee; */
 }
